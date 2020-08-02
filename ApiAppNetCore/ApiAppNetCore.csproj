@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApiControllers\ApiControllers.csproj" />
+    <ProjectReference Include="..\ApiModels\ApiModels.csproj" />
+    <ProjectReference Include="..\DAL\DAL.csproj" />
+    <ProjectReference Include="..\Logger\Logger.csproj" />
+    <ProjectReference Include="..\StaticHttpContextForNetCore\StaticHttpContextForNetCore.csproj" />
+  </ItemGroup>
+
+
+</Project>

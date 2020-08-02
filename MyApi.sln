@@ -11,11 +11,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ingest", "SOAPIngest\Ingest
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticHttpContextForNetCore", "StaticHttpContextForNetCore\StaticHttpContextForNetCore.csproj", "{E55FCAB5-EFDA-4EF5-91CB-D8D2C752B0E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiControllers", "ApiControllers\ApiControllers.csproj", "{1CBF087A-CAAE-40E5-9A6D-2B1BE6CEB8DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiControllers", "ApiControllers\ApiControllers.csproj", "{1CBF087A-CAAE-40E5-9A6D-2B1BE6CEB8DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{050DC020-193A-4D1B-B205-9C384ABC7F38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{050DC020-193A-4D1B-B205-9C384ABC7F38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiModels", "ApiModels\ApiModels.csproj", "{3C879E6B-0B88-49FD-A943-F105D747212C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiModels", "ApiModels\ApiModels.csproj", "{3C879E6B-0B88-49FD-A943-F105D747212C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiAppNetCore", "ApiAppNetCore\ApiAppNetCore.csproj", "{F09CCBB6-C589-4A5B-9061-2920D8383FF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{5E50CA65-2A26-4DF1-AAEB-057C58D75877}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{3C879E6B-0B88-49FD-A943-F105D747212C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C879E6B-0B88-49FD-A943-F105D747212C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C879E6B-0B88-49FD-A943-F105D747212C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F09CCBB6-C589-4A5B-9061-2920D8383FF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F09CCBB6-C589-4A5B-9061-2920D8383FF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F09CCBB6-C589-4A5B-9061-2920D8383FF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F09CCBB6-C589-4A5B-9061-2920D8383FF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E50CA65-2A26-4DF1-AAEB-057C58D75877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E50CA65-2A26-4DF1-AAEB-057C58D75877}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E50CA65-2A26-4DF1-AAEB-057C58D75877}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E50CA65-2A26-4DF1-AAEB-057C58D75877}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
