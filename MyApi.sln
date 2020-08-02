@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiModels", "ApiModels\ApiM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiAppNetCore", "ApiAppNetCore\ApiAppNetCore.csproj", "{F09CCBB6-C589-4A5B-9061-2920D8383FF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{5E50CA65-2A26-4DF1-AAEB-057C58D75877}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IngestCommon", "IngestCommon\IngestCommon.csproj", "{31E17AEE-7151-43CB-A5D3-CA42C3059C87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,10 +59,10 @@ Global
 		{F09CCBB6-C589-4A5B-9061-2920D8383FF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F09CCBB6-C589-4A5B-9061-2920D8383FF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F09CCBB6-C589-4A5B-9061-2920D8383FF9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5E50CA65-2A26-4DF1-AAEB-057C58D75877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5E50CA65-2A26-4DF1-AAEB-057C58D75877}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5E50CA65-2A26-4DF1-AAEB-057C58D75877}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5E50CA65-2A26-4DF1-AAEB-057C58D75877}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31E17AEE-7151-43CB-A5D3-CA42C3059C87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31E17AEE-7151-43CB-A5D3-CA42C3059C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31E17AEE-7151-43CB-A5D3-CA42C3059C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31E17AEE-7151-43CB-A5D3-CA42C3059C87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
