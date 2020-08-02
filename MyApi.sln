@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiAppNetCore", "ApiAppNetC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IngestCommon", "IngestCommon\IngestCommon.csproj", "{31E17AEE-7151-43CB-A5D3-CA42C3059C87}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IngestNetCore", "IngestNetCore\IngestNetCore.csproj", "{583046C1-AB0A-48AD-9B75-3D10E7913652}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{31E17AEE-7151-43CB-A5D3-CA42C3059C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31E17AEE-7151-43CB-A5D3-CA42C3059C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31E17AEE-7151-43CB-A5D3-CA42C3059C87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{583046C1-AB0A-48AD-9B75-3D10E7913652}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{583046C1-AB0A-48AD-9B75-3D10E7913652}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{583046C1-AB0A-48AD-9B75-3D10E7913652}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{583046C1-AB0A-48AD-9B75-3D10E7913652}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
