@@ -174,12 +174,12 @@ namespace KLogMonitor
         private string FormatMessage(string msg)
         {
             return string.Format("class:{0} topic:{1} method:{2} server:{3} ip:{4} reqid:{5} msg:{6}",
-                HttpContext.Current.Items[CLASS_NAME],      // 0
-                HttpContext.Current.Items[TOPIC],           // 1
-                HttpContext.Current.Items[METHOD_NAME],     // 2
-                HttpContext.Current.Items[SERVER],          // 3
-                HttpContext.Current.Items[IP_ADDRESS],      // 4
-                HttpContext.Current.Items[REQUEST_ID_KEY],  // 5
+                HttpContext.Current?.Items[CLASS_NAME],      // 0
+                HttpContext.Current?.Items[TOPIC],           // 1
+                HttpContext.Current?.Items[METHOD_NAME],     // 2
+                HttpContext.Current?.Items[SERVER],          // 3
+                HttpContext.Current?.Items[IP_ADDRESS],      // 4
+                HttpContext.Current?.Items[REQUEST_ID_KEY],  // 5
                 msg);                                       // 6
         }
 

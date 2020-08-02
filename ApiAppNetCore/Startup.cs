@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
+using KLogMonitor;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -16,6 +18,8 @@ namespace ApiAppNetCore
 {
     public class Startup
     {
+        private static readonly KLogger _Logger = new KLogger(MethodBase.GetCurrentMethod().DeclaringType.ToString());
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -37,6 +41,9 @@ namespace ApiAppNetCore
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            KLogger.Configure("log4net.config");
+            _Logger.Info("Starting application");
+
             var httpContextAccessor = app.ApplicationServices.GetService<IHttpContextAccessor>();
             System.Web.HttpContext.Configure(httpContextAccessor);
             if (env.IsDevelopment())
@@ -46,10 +53,18 @@ namespace ApiAppNetCore
 
             app.Map("/api", apiApp =>
             {
+                //Setting trace identifier for logs
+                apiApp.Use(async (ctx, next) =>
+                {
+                    ctx.Items[KLogger.REQUEST_ID_KEY] = ctx.TraceIdentifier;
+                    await next();
+                });
+
+
                 apiApp.UseRouting();
                 apiApp.UseEndpoints(endpoints =>
                 {
-                    endpoints.MapControllerRoute("default","{controller}/{action}/{id?}");
+                    endpoints.MapControllerRoute("default", "{controller}/{action}/{id?}");
                     endpoints.MapControllers();
                 });
             });
