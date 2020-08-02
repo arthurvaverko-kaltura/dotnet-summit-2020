@@ -1,5 +1,5 @@
-﻿using ApiApp.DAL;
-using ApiApp.Models;
+﻿using ApiModels;
+using DAL;
 using KLogMonitor;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,11 @@ using System.Net.Http;
 using System.Reflection;
 using System.Web.Http;
 
-namespace ApiApp.Controllers
+#if NETCOREAPP3_1
+using Microsoft.AspNetCore.Mvc;
+#endif
+
+namespace ApiControllers
 {
     public class DataController : ApiController
     {

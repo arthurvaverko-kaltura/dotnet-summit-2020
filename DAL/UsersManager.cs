@@ -1,4 +1,4 @@
-﻿using ApiApp.Models;
+﻿using ApiModels;
 using KLogMonitor;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Threading;
 using System.Web;
 
-namespace ApiApp.DAL
+namespace DAL
 {
     public class UsersManager
     {

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Web;
 using System.Web.Http;
+using System.Web.Mvc;
 using System.Web.Routing;
 
 namespace ApiApp
@@ -21,9 +22,7 @@ namespace ApiApp
             GlobalConfiguration.Configure(WebApiConfig.Register);
             _Logger.Info("Registered routes");
 
-
-
-
+            ControllerBuilder.Current.DefaultNamespaces.Add("ApiControllers");
         }
     }
 }

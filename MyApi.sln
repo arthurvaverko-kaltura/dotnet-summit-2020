@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logger", "Logger\Logger.csproj", "{BD00096E-FFCD-437D-9CD0-CF2C95990D79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logger", "Logger\Logger.csproj", "{BD00096E-FFCD-437D-9CD0-CF2C95990D79}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiApp", "ApiApp\ApiApp.csproj", "{53AD520F-1260-4494-98A0-921A9B02CDAD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ingest", "SOAPIngest\Ingest.csproj", "{BA8BCDE5-E302-42D2-90E1-AD81494672C3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticHttpContextForNetCore", "StaticHttpContextForNetCore\StaticHttpContextForNetCore.csproj", "{E55FCAB5-EFDA-4EF5-91CB-D8D2C752B0E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiControllers", "ApiControllers\ApiControllers.csproj", "{1CBF087A-CAAE-40E5-9A6D-2B1BE6CEB8DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{050DC020-193A-4D1B-B205-9C384ABC7F38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiModels", "ApiModels\ApiModels.csproj", "{3C879E6B-0B88-49FD-A943-F105D747212C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{E55FCAB5-EFDA-4EF5-91CB-D8D2C752B0E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E55FCAB5-EFDA-4EF5-91CB-D8D2C752B0E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E55FCAB5-EFDA-4EF5-91CB-D8D2C752B0E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CBF087A-CAAE-40E5-9A6D-2B1BE6CEB8DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CBF087A-CAAE-40E5-9A6D-2B1BE6CEB8DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CBF087A-CAAE-40E5-9A6D-2B1BE6CEB8DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CBF087A-CAAE-40E5-9A6D-2B1BE6CEB8DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{050DC020-193A-4D1B-B205-9C384ABC7F38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{050DC020-193A-4D1B-B205-9C384ABC7F38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{050DC020-193A-4D1B-B205-9C384ABC7F38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{050DC020-193A-4D1B-B205-9C384ABC7F38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C879E6B-0B88-49FD-A943-F105D747212C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C879E6B-0B88-49FD-A943-F105D747212C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C879E6B-0B88-49FD-A943-F105D747212C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C879E6B-0B88-49FD-A943-F105D747212C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
