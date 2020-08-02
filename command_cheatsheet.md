@@ -9,11 +9,16 @@ Usage
 
 make sure all referneced assemblies that are non netcore you will wrap inside
 ```XML
-  <ItemGroup Condition="TargetFramework == net461">
+  <ItemGroup Condition="'$(TargetFramework)' == 'net461'">
+    <PackageReference Include="log4net" Version="2.0.4" />
     <Reference Include="System.Web" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  
+  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.1'">
+    <ProjectReference Include="..\StaticHttpContextForNetCore\StaticHttpContextForNetCore.csproj" />
   </ItemGroup>
 ```
 

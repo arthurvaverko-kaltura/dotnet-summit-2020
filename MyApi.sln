@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiApp", "ApiApp\ApiApp.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ingest", "SOAPIngest\Ingest.csproj", "{BA8BCDE5-E302-42D2-90E1-AD81494672C3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticHttpContextForNetCore", "StaticHttpContextForNetCore\StaticHttpContextForNetCore.csproj", "{E55FCAB5-EFDA-4EF5-91CB-D8D2C752B0E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BA8BCDE5-E302-42D2-90E1-AD81494672C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA8BCDE5-E302-42D2-90E1-AD81494672C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA8BCDE5-E302-42D2-90E1-AD81494672C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E55FCAB5-EFDA-4EF5-91CB-D8D2C752B0E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E55FCAB5-EFDA-4EF5-91CB-D8D2C752B0E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E55FCAB5-EFDA-4EF5-91CB-D8D2C752B0E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E55FCAB5-EFDA-4EF5-91CB-D8D2C752B0E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
