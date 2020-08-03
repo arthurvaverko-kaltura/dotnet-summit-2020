@@ -30,7 +30,7 @@ namespace DAL
         public static IEnumerable<User> GetUsers()
         {
             _Logger.Info("Please wait fetching users...");
-            Thread.Sleep(TimeSpan.FromSeconds(2));
+            Thread.Sleep(TimeSpan.FromSeconds(1));
             return _UserStore;
         }
     }

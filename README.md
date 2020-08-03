@@ -22,4 +22,15 @@ make sure all referneced assemblies that are non netcore you will wrap inside
   </ItemGroup>
 ```
 
+# Docker
+```cmd
+docker build -t summit .
+docker run -it --rm -p 5000:80 summit
+```
+
+# Bombard
+```cmd
+bombardier -c 500 -m GET -H Content-Type:application/json -l -n 1000 http://localhost:5000/api/data
+```
+
 
