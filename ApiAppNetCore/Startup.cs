@@ -31,7 +31,11 @@ namespace ApiAppNetCore
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddHttpContextAccessor();
-
+            services.AddQueuePolicy(c=> { 
+                c.MaxConcurrentRequests = Environment.ProcessorCount;
+                c.RequestQueueLimit = 5000;
+                
+                });
 
             services.AddControllers()
                 .AddApplicationPart(typeof(ApiControllers.DataController).Assembly)
@@ -50,6 +54,8 @@ namespace ApiAppNetCore
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseConcurrencyLimiter();
 
             app.Map("/api", apiApp =>
             {

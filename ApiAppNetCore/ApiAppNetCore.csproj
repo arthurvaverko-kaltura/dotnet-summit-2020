@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.ConcurrencyLimiter" Version="3.1.6" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ApiControllers\ApiControllers.csproj" />
     <ProjectReference Include="..\ApiModels\ApiModels.csproj" />
     <ProjectReference Include="..\DAL\DAL.csproj" />
