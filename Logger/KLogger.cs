@@ -51,10 +51,13 @@ namespace KLogMonitor
         {
             var repo = GetLoggerRepository();
             _Logger = LogManager.GetLogger(repo.Name, className);
-            HttpContext.Current.Items[SERVER] = Environment.MachineName;
-            HttpContext.Current.Items[CLASS_NAME] = className;
-            HttpContext.Current.Items[LOGGER_NAME] = string.Empty;
-            HttpContext.Current.Items[CLASS_NAME] = className;
+            if (HttpContext.Current != null)
+            {
+                HttpContext.Current.Items[SERVER] = Environment.MachineName;
+                HttpContext.Current.Items[CLASS_NAME] = className;
+                HttpContext.Current.Items[LOGGER_NAME] = string.Empty;
+                HttpContext.Current.Items[CLASS_NAME] = className;
+            }
         }
 
 

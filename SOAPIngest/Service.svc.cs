@@ -2,9 +2,11 @@
 using KLogMonitor;
 using System.Reflection;
 using System.ServiceModel;
+using System.ServiceModel.Activation;
 
 namespace Ingest
 {
+    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]
     [ServiceBehavior(AddressFilterMode = AddressFilterMode.Any, InstanceContextMode = InstanceContextMode.Single, ConcurrencyMode = ConcurrencyMode.Multiple)]    
     public class Service : IService
     {
